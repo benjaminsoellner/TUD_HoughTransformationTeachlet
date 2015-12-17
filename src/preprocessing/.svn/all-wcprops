@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet/!svn/ver/156/HoughTransformationTeachlet/src/preprocessing
+END
+PreProcessingConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet/!svn/ver/155/HoughTransformationTeachlet/src/preprocessing/PreProcessingConstants.java
+END
+CannyDericheFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet/!svn/ver/63/HoughTransformationTeachlet/src/preprocessing/CannyDericheFilter.java
+END
+PreProcessingSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet/!svn/ver/154/HoughTransformationTeachlet/src/preprocessing/PreProcessingSettings.java
+END
+PreProcessingImageToolkit.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet/!svn/ver/156/HoughTransformationTeachlet/src/preprocessing/PreProcessingImageToolkit.java
+END

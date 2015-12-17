@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+        <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+        <TITLE></TITLE>
+        <META NAME="GENERATOR" CONTENT="OpenOffice.org 3.1  (Win32)">
+        <META NAME="CREATED" CONTENT="20090717;17402100">
+        <META NAME="CHANGEDBY" CONTENT="Matthias G&ouml;tz">
+        <META NAME="CHANGED" CONTENT="20091207;20473100">
+        <META NAME="SDFOOTNOTE" CONTENT=";1">
+        <STYLE TYPE="text/css">
+        <!--
+                @page { margin-left: 2cm; margin-right: 2cm; margin-top: 1.72cm; margin-bottom: 2cm }
+                P { margin-bottom: 0.21cm }
+        -->
+        </STYLE>
+</HEAD>
+        <BODY LANG="de-DE" DIR="LTR">
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=4 COLOR="#7a150e"><B>Bild bearbeiten</B>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=3>
+                                In diesem Schritt k&ouml;nnen im Bild (linker Bildschirm) von Hand Linien hinzugef&uuml;gt oder entfernt werden.
+                                Beim Bewegen der Maus &uuml;ber das Bild wird gleichzeitig im rechten Bildschirm die entsprechende Hough-Kurve gezeichnet.
+                                Wie auch in den folgenden Schritten besteht die M&ouml;glichkeit das Bild mit dem Mausrad
+                                zu verkleinern oder vergr&ouml;&szlig;ern. Bei einer sehr starken Vergr&ouml;&szlig;erung kann bei
+                                gedr&uuml;ckter rechter Maustaste durch das Bild navigiert werden.
+                                </FONT>
+                        </FONT>
+                </P>
+                <p><IMG SRC="Hough_Bearbeitung.png" HEIGHT="254" Width="592" ></p>
+        </BODY>
+</HTML>

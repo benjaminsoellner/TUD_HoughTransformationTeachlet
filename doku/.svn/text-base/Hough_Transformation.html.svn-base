@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+        <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+        <TITLE></TITLE>
+        <META NAME="GENERATOR" CONTENT="OpenOffice.org 3.1  (Win32)">
+        <META NAME="CREATED" CONTENT="20090717;17402100">
+        <META NAME="CHANGEDBY" CONTENT="Matthias G&ouml;tz">
+        <META NAME="CHANGED" CONTENT="20091207;20473100">
+        <META NAME="SDFOOTNOTE" CONTENT=";1">
+        <STYLE TYPE="text/css">
+        <!--
+                @page { margin-left: 2cm; margin-right: 2cm; margin-top: 1.72cm; margin-bottom: 2cm }
+                P { margin-bottom: 0.21cm }
+        -->
+        </STYLE>
+</HEAD>
+        <BODY LANG="de-DE" DIR="LTR">
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=4 COLOR="#7a150e"><B>Hough Transformation</B>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=3>
+                                In diesem Schritt kann die eigentliche Hough-Transformation beobachtet werden. Dabei wird jedes Pixel des Bildes (linker Bildschirm) durchlaufen und die dazugeh&ouml;rige Hough-Kurve im Hough-Raum (rechter Bildschirm) gezeichnet, falls ein weißes Pixel im Bild gefunden wurde. Die Schnittpunkte der Hough-Kurven bekommen ein h&ouml;heres Gewicht und werden heller dargestellt.
+                                Nach einer Weile kann man beobachten, wie sich Schnittpunkte hervorheben, welche Repr&auml;sentanten f&uuml;r Geraden im Eingangsbild sind.
+                                </FONT>
+                        </FONT>
+                </P>
+                <p><IMG SRC="Hough_Transformation.png" HEIGHT="134" Width="569" ></p>
+        </BODY>
+</HTML>

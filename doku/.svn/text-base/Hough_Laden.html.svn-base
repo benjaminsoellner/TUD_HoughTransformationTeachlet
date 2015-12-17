@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+        <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+        <TITLE></TITLE>
+        <META NAME="GENERATOR" CONTENT="OpenOffice.org 3.1  (Win32)">
+        <META NAME="CREATED" CONTENT="20090717;17402100">
+        <META NAME="CHANGEDBY" CONTENT="Matthias G&ouml;tz">
+        <META NAME="CHANGED" CONTENT="20091207;20473100">
+        <META NAME="SDFOOTNOTE" CONTENT=";1">
+        <STYLE TYPE="text/css">
+        <!--
+                @page { margin-left: 2cm; margin-right: 2cm; margin-top: 1.72cm; margin-bottom: 2cm }
+                P { margin-bottom: 0.21cm }
+        -->
+        </STYLE>
+</HEAD>
+        <BODY LANG="de-DE" DIR="LTR">
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=4 COLOR="#7a150e"><B>Bild laden</B>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=3> 
+                                Die Basis f&uuml;r eine Hough-Transformation ist ein Bild. In diesem Schritt ist 
+                                es m&ouml;glich, ein Foto aus einer bestehenden Datenbank zu nutzen, oder alternativ 
+                                ein eigenes hochzuladen. Im Schritt "Bild bearbeiten" werden im sp&auml;teren Verlauf 
+                                noch Werkzeuge zur Verf&uuml;gung gestellt, mit denen das geladene Bild bearbeitet 
+                                werden kann. So k&ouml;nnen zum Beispiel Linien hinzugef&uuml;gt oder entfernt werden. 
+                                </FONT>
+                        </FONT>
+                </P>				
+        </BODY>
+</HTML>

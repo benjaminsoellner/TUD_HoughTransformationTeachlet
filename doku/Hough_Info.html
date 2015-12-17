@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+        <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+        <TITLE></TITLE>
+        <META NAME="GENERATOR" CONTENT="OpenOffice.org 3.1  (Win32)">
+        <META NAME="CREATED" CONTENT="20090717;17402100">
+        <META NAME="CHANGEDBY" CONTENT="Matthias G&ouml;tz">
+        <META NAME="CHANGED" CONTENT="20091207;20473100">
+        <META NAME="SDFOOTNOTE" CONTENT=";1">
+        <STYLE TYPE="text/css">
+        <!--
+                @page { margin-left: 2cm; margin-right: 2cm; margin-top: 1.72cm; margin-bottom: 2cm }
+                P { margin-bottom: 0.21cm }
+        -->
+        </STYLE>
+</HEAD>
+        <BODY LANG="de-DE" DIR="LTR">
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=4 COLOR="#7a150e"><B>Einleitung</B>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=3> 
+                                Die Hough-Transformation ist eine Technik, die dazu dienen soll, 
+                                geometrische Merkmale aus einer Menge von Punkten herauszufiltern. 
+                                Ihr Grundprinzip l&auml;sst sich mit einer Art Abstimmung vergleichen. 
+                                Dabei werden f&uuml;r jeden Token aus einer Menge alle geometrischen 
+                                Figuren betrachtet, die durch ihn laufen. Diese Figuren erhalten 
+                                eine Stimme. Ziel ist es, Objekte mit vielen Stimmen zu finden. 
+                                <BR><BR>
+                                In diesem Applet soll dies beispielhaft an Hand von Linien verdeutlicht 
+                                werden. Man sucht demzufolge alle Linien, die durch einen im Bildraum 
+                                gegebenen Pixel laufen. Diese enthalten eine Stimme im so genannten 
+                                Hough-Raum oder auch Akkumulator. Die Elemente dieses Raumes &auml;hneln 
+                                einem Stimmbeh&auml;lter. Dabei z&auml;hlt jeder Beh&auml;lter die Stimmen 
+                                f&uuml;r eine bestimmte Linie hoch. Dieser Prozess wird f&uuml;r jeden Pixel des 
+                                Ausgangsbildes wiederholt. Je mehr Stimmen ein Objekt am Ende 
+                                besitzt, desto mehr Punkte liegen auf der dazugeh&ouml;rigen Linie.
+                                <BR><BR>
+                                In den folgenden Schritten soll der gesamte Prozess visualisiert 
+                                und die einzelnen Schritte genauer erl&auml;utert werden.
+                                <BR><BR>
+                                Was genau ist der Hough-Raum?
+                                <BR>
+                                Im Hough-Raum werden die Informationen aus einem Bild in etwas anderer 
+                                Form dargestellt. Jede im Bildraum vorhandene Gerade wird im Hough-Raum 
+                                nur noch als Punkt dargestellt. Dieser Punkt wird gewichtet und enth&auml;lt 
+                                umso mehr Stimmen, je mehr Punkte auf der im Bild vorhandenen Linie liegen. 
+                                Um aus einer Linie im Bildraum einen Punkt im Hough-Raum zu erhalten, 
+                                sind einige mathematische Umformungen n&ouml;tig:
+                                <BR><BR>
+                                </FONT>
+                        </FONT>
+                </P>
+                
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=4 COLOR="#ca882b"><B>1. Schritt<BR><BR></B>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=3> 
+                                Eine Gerade hat die Gleichung f(x): y = mx + n.
+                                F&uuml;r einen festen Punkt P(x,y) lassen sich mit verschiedenen Werten f&uuml;r 
+                                m und n unterschiedliche Geraden darstellen, die durch diesen Punkt laufen.
+                                Zuerst wird die Gleichung nach dem Anstieg umgestellt: 
+                                <BR><BR>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P ALIGN=CENTER STYLE="margin-bottom: 0cm">	
+                        <IMG SRC="Formel_1.png" HEIGHT="50" Width="400" >				
+                </P>
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=3> 
+                                <BR>
+                                Davon ausgehend, dass x und y gegeben sind, entsteht nach dieser Umwandlung eine 
+                                Geraden-Gleichung. Diese Gerade geh&ouml;rt zum Hough-Raum und pr&auml;sentiert 
+                                alle Linien, die durch den Punkt (x,y) im Bildraum verlaufen. Alle Punkte (m,n) 
+                                einer Gerade im Hough-Raum erhalten eine Gewichtung, beginnend bei eins. Diese 
+                                Wertigkeit gewinnt im weiteren Verlauf noch an Bedeutung.
+                                <BR><BR>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P ALIGN=CENTER STYLE="margin-bottom: 0cm">	
+                        <IMG SRC="xy_1.png" HEIGHT="200" Width="280" >
+                                <FONT SIZE=3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT>
+                        <IMG SRC="mn_1.png" HEIGHT="200" Width="280" >
+                </P>
+                <P ALIGN=CENTER STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=3 STYLE="font-size: 9pt">
+                                        <I>Links Bildraum mit gegebener Pixelmenge, rechts der Akkumulator/Houghraum <BR><BR>
+                                        </I>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=4 COLOR="#ca882b"><B>2. Schritt<BR><BR></B>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=3> 
+                                Als n&auml;chstes wird der erste Schritt f&uuml;r alle Punkte im Bildraum fortgesetzt. 
+                                Falls eine Gerade existiert, die durch mehr als einen Punkt verl&auml;uft, hat diese 
+                                f&uuml;r alle Punkte die gleichen Werte f&uuml;r m und n. Demzufolge existieren f&uuml;r 
+                                diese Punkte im Hough-Raum mehrere Geraden, die alle durch den gleichen Punkt (m,n) 
+                                verlaufen m&uuml;ssen. Jede Funktion, die durch diesen Schnittpunkt verl&auml;uft, 
+                                erh&ouml;ht dessen Wertigkeit um eins. 
+                                <BR><BR>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P ALIGN=CENTER STYLE="margin-bottom: 0cm">	
+                        <IMG SRC="xy_2.png" HEIGHT="200" Width="280" >
+                                <FONT SIZE=3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT>
+                        <IMG SRC="mn_2.png" HEIGHT="200" Width="280" >
+                </P>
+                <P ALIGN=CENTER STYLE="margin-bottom: 0cm">	
+                        <IMG SRC="xy_3.png" HEIGHT="200" Width="280" >
+                                <FONT SIZE=3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT>
+                        <IMG SRC="mn_3.png" HEIGHT="200" Width="280" >
+                </P>
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=4 COLOR="#ca882b"><B><BR>3. Schritt<BR><BR></B>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=3> 
+                                Wenn alle Punkte des Bildes durchlaufen wurden, werden aus dem Hough-Raum diejenigen 
+                                Punkte ausgew&auml;hlt, die die meisten Bewertungen haben. Diese geh&ouml;ren jeweils 
+                                zu einer Geraden im Bildraum. Die Anzahl an Punkten, die auf dieser Geraden liegen, 
+                                entspricht genau der im Hough-Raum angegebenen Wertigkeit.
+                                <BR><BR>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P ALIGN=CENTER STYLE="margin-bottom: 0cm">	
+                        <IMG SRC="xy_Ergebnis.png" HEIGHT="200" Width="280" >
+                                <FONT SIZE=3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT>
+                        <IMG SRC="mn_Ergebnis.png" HEIGHT="200" Width="280" >
+                </P>
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=4 COLOR="#ca882b"><B><BR>4. Schritt<BR><BR></B>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=3> 
+                                Die Umstellung der Geradengleichung nach m hat jedoch einen entscheidenden Nachteil. 
+                                Wenn ein Punkt direkt auf der x-Achse liegt, wird der Anstieg m demzufolge unendlich 
+                                gro&szlig;. Das h&auml;tte wiederum zur Folge, dass auch der Hough-Raum unendlich gro&szlig; wird 
+                                und eine Implementierung so nicht m&ouml;glich w&auml;re. Deswegen wird die Gleichung 
+                                noch ein weiteres Mal umgeformt. Die resultierende Gleichung beschreibt eine Linie durch 
+                                den k&uuml;rzesten Abstand d zum Ursprung und den Winkel &alpha; zwischen Linie und x-Achse.
+                                <BR><BR>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P ALIGN=CENTER STYLE="margin-bottom: 0cm">	
+                        <IMG SRC="xy_cos.png" HEIGHT="200" Width="280" >
+                </P>
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=3> 
+                                <BR>
+                                Somit ist eine Darstellung gefunden, die den Hough-Raum auf eine endliche Gr&ouml;&szlig;e 
+                                begrenzt, da der Winkel &alpha; nur in einem Wertebereich von 0 bis 2&pi; alle m&ouml;glichen Linien 
+                                repr&auml;sentiert. Der k&uuml;rzeste Abstand d der Linie zum Ursprung kann auch nicht 
+                                gr&ouml;&szlig;er werden, als die Bilddiagonale. Daraus resultierend treten im Hough-Raum 
+                                keine Linien mehr auf, sondern nur noch Kurven fon folgender Form:
+                                <BR><BR>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P ALIGN=CENTER STYLE="margin-bottom: 0cm">	
+                        <IMG SRC="Formel_2.png" HEIGHT="150" Width="250" >
+                </P>
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=3> 
+                                <BR>Ansonsten gibt es keine wesentlichen Ver&auml;nderungen.
+                                <BR><BR>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P ALIGN=CENTER STYLE="margin-bottom: 0cm">	
+                        <IMG SRC="xy_1.png" HEIGHT="200" Width="280" >
+                                <FONT SIZE=3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT>
+                        <IMG SRC="dalpha_1.png" HEIGHT="200" Width="280" >
+                </P>	
+        </BODY>
+</HTML>

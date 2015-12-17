@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet/!svn/ver/160/HoughTransformationTeachlet/src/gui/sections/interaction
+END
+HoughAnimationSection.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet/!svn/ver/156/HoughTransformationTeachlet/src/gui/sections/interaction/HoughAnimationSection.java
+END
+InteractionSection.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet/!svn/ver/128/HoughTransformationTeachlet/src/gui/sections/interaction/InteractionSection.java
+END
+InteractionSectionSwitch.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet/!svn/ver/156/HoughTransformationTeachlet/src/gui/sections/interaction/InteractionSectionSwitch.java
+END
+ThumbnailTableView.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet/!svn/ver/156/HoughTransformationTeachlet/src/gui/sections/interaction/ThumbnailTableView.java
+END
+ImageLoadSection.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet/!svn/ver/156/HoughTransformationTeachlet/src/gui/sections/interaction/ImageLoadSection.java
+END
+HoughSpaceMaximaSection.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet/!svn/ver/163/HoughTransformationTeachlet/src/gui/sections/interaction/HoughSpaceMaximaSection.java
+END
+PreprocessingSection.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet/!svn/ver/129/HoughTransformationTeachlet/src/gui/sections/interaction/PreprocessingSection.java
+END
+ImageEditSection.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet/!svn/ver/161/HoughTransformationTeachlet/src/gui/sections/interaction/ImageEditSection.java
+END
+DocumentationSection.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet/!svn/ver/128/HoughTransformationTeachlet/src/gui/sections/interaction/DocumentationSection.java
+END

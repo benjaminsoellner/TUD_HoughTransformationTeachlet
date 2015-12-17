@@ -1,0 +1,43 @@
+10
+
+dir
+160
+http://subversion.assembla.com/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet/HoughTransformationTeachlet/src
+http://subversion.assembla.com/svn/KPPhotogrammetrieSS09_HoughTransformationTeachlet
+
+
+
+2010-02-18T22:09:16.485378Z
+160
+s5253104
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+080cfd25-d5d9-4c59-82ea-70d02a200d8b
+
+preprocessing
+dir
+
+gui
+dir
+
+houghtransform
+dir
+
+ij_utilities
+dir
+
+appLogic
+dir
+

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+        <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+        <TITLE></TITLE>
+        <META NAME="GENERATOR" CONTENT="OpenOffice.org 3.1  (Win32)">
+        <META NAME="CREATED" CONTENT="20090717;17402100">
+        <META NAME="CHANGEDBY" CONTENT="Matthias G&ouml;tz">
+        <META NAME="CHANGED" CONTENT="20091207;20473100">
+        <META NAME="SDFOOTNOTE" CONTENT=";1">
+        <STYLE TYPE="text/css">
+        <!--
+                @page { margin-left: 2cm; margin-right: 2cm; margin-top: 1.72cm; margin-bottom: 2cm }
+                P { margin-bottom: 0.21cm }
+        -->
+        </STYLE>
+</HEAD>
+        <BODY LANG="de-DE" DIR="LTR">
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=4 COLOR="#7a150e"><B>Hough Linien</B>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=3>
+                                Wie bereits im letzten Schritt beobachtet werden konnte, werden im Hough-Raum alle Punkte gewichtet.
+                                Je mehr Kurven durch eine Koordinate verlaufen, desto mehr Pixel liegen auf der dazu
+                                geh&ouml;rigen Linie im Bildraum. Mit dem Threshold bzw. Schwellwert kann festgelegt
+                                werden, ab welcher L&auml;nge eine Linie im Bildraum dargestellt werden soll. Bei
+                                einem zu kleinen Wert kann es vorkommen, dass zu viele Linien dargestellt werden und
+                                die Übersicht verloren geht. Oftmals ist eine Kante so dick, dass daf&uuml;r mehrere
+                                Linien berechnet werden. Um die Anzahl dieser Linien zu reduzieren, kann auf das Bild
+                                noch eine „Non Maximum Unterdr&uuml;ckung“ angewendet werden. Diese sucht im Hough-Raum alle
+                                Stellen, die als Maximum definiert werden. Wenn mehrere Maxima direkt zusammenh&auml;ngen,
+                                wird aus dieser Menge nur der gr&ouml;&szlig;te Wert als Ergebnis angezeigt.
+                                </FONT>
+                        </FONT>
+                </P>
+                <p><IMG SRC="Hough_Linien.png" HEIGHT="259" Width="353" ></p>
+        </BODY>
+</HTML>

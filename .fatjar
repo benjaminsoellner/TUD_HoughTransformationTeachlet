@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Mon Dec 07 20:10:03 CET 2009
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=HoughTransformationTeachlet_fat.jar
+manifest.mergeall=true
+manifest.mainclass=
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=

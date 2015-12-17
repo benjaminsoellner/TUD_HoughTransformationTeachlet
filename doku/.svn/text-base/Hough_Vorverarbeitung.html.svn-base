@@ -1,0 +1,44 @@
+
+<HTML>
+<HEAD>
+        <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+        <TITLE></TITLE>
+        <META NAME="GENERATOR" CONTENT="OpenOffice.org 3.1  (Win32)">
+        <META NAME="CREATED" CONTENT="20090717;17402100">
+        <META NAME="CHANGEDBY" CONTENT="Matthias G&ouml;tz">
+        <META NAME="CHANGED" CONTENT="20091207;20473100">
+        <META NAME="SDFOOTNOTE" CONTENT=";1">
+        <STYLE TYPE="text/css">
+        <!--
+                @page { margin-left: 2cm; margin-right: 2cm; margin-top: 1.72cm; margin-bottom: 2cm }
+                P { margin-bottom: 0.21cm }
+        -->
+        </STYLE>
+</HEAD>
+        <BODY LANG="de-DE" DIR="LTR">
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=4 COLOR="#7a150e"><B>Bild vorverarbeiten</B>
+                                </FONT>
+                        </FONT>
+                </P>
+                <P STYLE="margin-bottom: 0cm">
+                        <FONT FACE="Verdana, sans-serif">
+                                <FONT SIZE=3> 
+                                Um ein m&ouml;glichst genaues Ergebnis zu erhalten, muss das Ausgangsbild so weit reduziert werden, 
+                                dass nur noch ein schwarzer Hintergrund und wei&szlig;e Kanten vorhanden sind.
+                                Daf&uuml;r ist zun&auml;chst eine Grauwert-Darstellung n&ouml;tig (linkes K&auml;stchen).
+                                <BR><BR>
+                                Anschlie&szlig;end wird ein Kantendetektor auf das Bild angewendet, um den Informationsgehalt auf die 
+                                wesentlichen Elemente zu beschr&auml;nken. Es besteht die M&ouml;glichkeit, zwischen drei 
+                                verschiedenen Algorithmen zu w&auml;hlen (mittleres K&auml;stchen).
+                                <BR><BR>
+                                Zum Schluss wird das Ergebnis der vorangegangenen Schritte noch binarisiert. Der Schwellwert kann 
+                                automatisch ermittelt, oder auch manuell ver&auml;ndert werden (rechtes K&auml;stchen).
+                                <BR><BR>
+                                </FONT>
+                        </FONT>
+                </P>
+               <p><IMG SRC="Hough_Vorverarbeitung.png" HEIGHT="256" Width="363" ></p>
+        </BODY>
+</HTML>
